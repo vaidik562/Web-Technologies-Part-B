@@ -1,0 +1,36 @@
+{
+    "courses": [
+        {
+            "code": "CS701",
+            "name": "Web Technologies",
+            "lecturer": "Dr. James Anderson",
+            "credits": 20,
+            "description": "Advanced web development covering HTML5, CSS3, JavaScript, AJAX, and modern frameworks.",
+            "semester": "Semester 1"
+        },
+        {
+            "code": "CS702",
+            "name": "Machine Learning",
+            "lecturer": "Prof. Linda Martinez",
+            "credits": 20,
+            "description": "Introduction to machine learning algorithms, neural networks, and practical applications.",
+            "semester": "Semester 1"
+        },
+        {
+            "code": "CS703",
+            "name": "Database Systems",
+            "lecturer": "Dr. Robert Taylor",
+            "credits": 20,
+            "description": "Advanced database design, SQL, NoSQL databases, and data warehousing concepts.",
+            "semester": "Semester 2"
+        },
+        {
+            "code": "CS704",
+            "name": "Cloud Computing",
+            "lecturer": "Dr. Amy Wilson",
+            "credits": 20,
+            "description": "Cloud architecture, virtualization, containerization, and distributed systems.",
+            "semester": "Semester 2"
+        }
+    ]
+}

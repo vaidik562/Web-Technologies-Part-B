@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Online Bookstore – User System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        let loggedIn = false;
+
+        function registerUser() {
+            alert("User testuser123 registered successfully!");
+        }
+
+        function loginUser() {
+            loggedIn = true;
+            alert("Login successful!");
+        }
+
+        function updateProfile() {
+            alert("Email updated to newemail@example.com");
+        }
+
+        function resetPassword() {
+            alert("Password reset link sent. Password changed to newPassword456");
+        }
+
+        function writeReview() {
+            if (!loggedIn) {
+                alert("Please log in to write a review.");
+            } else {
+                alert("Review submitted successfully!");
+            }
+        }
+
+        function deactivateAccount() {
+            loggedIn = false;
+            alert("Account deactivated. You can no longer log in.");
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Online Bookstore – User Management</h1>
+
+    <section>
+        <h2>User Registration</h2>
+        <p>Username: testuser123</p>
+        <p>Email: testuser123@example.com</p>
+        <p>Password: securePassword123</p>
+        <button onclick="registerUser()">Register</button>
+    </section>
+
+    <section>
+        <h2>User Login</h2>
+        <button onclick="loginUser()">Log In</button>
+    </section>
+
+    <section>
+        <h2>Profile Management</h2>
+        <button onclick="updateProfile()">Update Email</button>
+    </section>
+
+    <section>
+        <h2>Password Reset</h2>
+        <button onclick="resetPassword()">Reset Password</button>
+    </section>
+
+    <section>
+        <h2>User Privileges</h2>
+        <button onclick="writeReview()">Write Book Review</button>
+    </section>
+
+    <section>
+        <h2>Account Deactivation</h2>
+        <button onclick="deactivateAccount()">Deactivate Account</button>
+    </section>
+
+</body>
+
+</html>

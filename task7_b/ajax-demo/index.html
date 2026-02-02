@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Data Loader - MSc Web Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MSc Computer Science - AJAX Demo</h1>
+            <p>Asynchronous Data Loading Example</p>
+        </header>
+
+        <div class="controls">
+            <button id="loadStudents" class="btn">Load Students</button>
+            <button id="loadCourses" class="btn">Load Courses</button>
+            <button id="loadNews" class="btn">Load News</button>
+            <button id="clearData" class="btn btn-secondary">Clear</button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading data...</p>
+        </div>
+
+        <div id="dataContainer" class="data-container">
+            <p class="placeholder">Click a button above to load data asynchronously using AJAX</p>
+        </div>
+
+        <footer>
+            <p>Unit 7 Consolidate - Task 2 | October 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

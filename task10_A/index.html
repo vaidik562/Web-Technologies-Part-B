@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        /* Navigation */
+        nav {
+            background: #2c3e50;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+        }
+
+        ul li a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        ul li a:hover {
+            background: #34495e;
+        }
+
+        /* Dropdown */
+        ul li ul {
+            display: none;
+            position: absolute;
+            background: #34495e;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            flex-direction: column;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        /* Mobile menu */
+        .menu-toggle {
+            display: none;
+            font-size: 22px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            height: 100vh;
+        }
+
+        #home { background: #ecf0f1; }
+        #about { background: #dfe6e9; }
+        #services { background: #b2bec3; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            ul {
+                flex-direction: column;
+                display: none;
+                background: #2c3e50;
+                width: 100%;
+            }
+
+            ul.active {
+                display: block;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">MySite</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="#services">Services ▾</a>
+                <ul>
+                    <li><a href="#services">Web Design</a></li>
+                    <li><a href="#services">Development</a></li>
+                    <li><a href="#services">SEO</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home">
+    <h1>Home Section</h1>
+    <p>Welcome to the homepage.</p>
+</section>
+
+<section id="services">
+    <h1>Services Section</h1>
+    <p>Details about services offered.</p>
+</section>
+
+<section id="about">
+    <h1>About Section</h1>
+    <p>Information about the website.</p>
+</section>
+
+</body>
+</html>

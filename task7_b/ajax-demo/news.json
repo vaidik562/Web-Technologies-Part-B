@@ -1,0 +1,28 @@
+{
+    "news": [
+        {
+            "title": "New AI Research Lab Opens",
+            "content": "The Computer Science Department is pleased to announce the opening of a new state-of-the-art AI Research Laboratory. The facility will support cutting-edge research in machine learning and natural language processing.",
+            "date": "2025-01-28",
+            "author": "University Communications"
+        },
+        {
+            "title": "Guest Lecture: Future of Web Development",
+            "content": "Join us for an exciting guest lecture by industry expert Dr. Alexandra Smith on the future of web technologies, including WebAssembly, Progressive Web Apps, and serverless architecture.",
+            "date": "2025-01-25",
+            "author": "CS Department"
+        },
+        {
+            "title": "Hackathon Winners Announced",
+            "content": "Congratulations to Team ByteBuilders for winning the annual MSc Computer Science Hackathon with their innovative healthcare monitoring application using IoT and cloud technologies.",
+            "date": "2025-01-20",
+            "author": "Student Activities Office"
+        },
+        {
+            "title": "Spring Semester Registration Now Open",
+            "content": "Registration for Spring Semester elective courses is now open. Students are encouraged to review the course catalog and register early as some popular courses fill up quickly.",
+            "date": "2025-01-15",
+            "author": "Academic Registry"
+        }
+    ]
+}

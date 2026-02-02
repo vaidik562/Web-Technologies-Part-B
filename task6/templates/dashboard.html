@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Dynamic Web App</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">🌐 Dynamic Web App</div>
+        <div class="nav-user">
+            <span>Welcome, <strong>{{ username }}</strong></span>
+            <a href="/logout" class="btn btn-logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Add Event Form -->
+        <div class="card">
+            <h2>📅 Add New Event</h2>
+            <div id="event-message" class="message hidden"></div>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="title">Event Title</label>
+                    <input type="text" id="title" name="title" required placeholder="Enter event title">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="3"
+                        placeholder="Enter event description (optional)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="event_date">Event Date</label>
+                    <input type="date" id="event_date" name="event_date">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Event</button>
+            </form>
+        </div>
+
+        <!-- Events List -->
+        <div class="card">
+            <h2>📋 Your Events</h2>
+            <div id="events-list">
+                {% if events %}
+                {% for event in events %}
+                <div class="event-item" id="event-{{ event.id }}">
+                    <div class="event-content">
+                        <h3>{{ event.title }}</h3>
+                        {% if event.description %}
+                        <p>{{ event.description }}</p>
+                        {% endif %}
+                        {% if event.event_date %}
+                        <span class="event-date">📆 {{ event.event_date }}</span>
+                        {% endif %}
+                    </div>
+                    <button class="btn btn-delete" onclick="deleteEvent({{ event.id }})">
+                        🗑️ Delete
+                    </button>
+                </div>
+                {% endfor %}
+                {% else %}
+                <p class="no-events">No events yet. Create your first event above!</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>

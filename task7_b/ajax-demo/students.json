@@ -1,0 +1,32 @@
+{
+    "students": [
+        {
+            "id": "MSC2025001",
+            "name": "Sarah Johnson",
+            "programme": "MSc Computer Science",
+            "email": "s.johnson@university.ac.uk",
+            "year": "2024/2025"
+        },
+        {
+            "id": "MSC2025002",
+            "name": "Michael Chen",
+            "programme": "MSc Computer Science",
+            "email": "m.chen@university.ac.uk",
+            "year": "2024/2025"
+        },
+        {
+            "id": "MSC2025003",
+            "name": "Emma Williams",
+            "programme": "MSc Computer Science",
+            "email": "e.williams@university.ac.uk",
+            "year": "2024/2025"
+        },
+        {
+            "id": "MSC2025004",
+            "name": "David Patel",
+            "programme": "MSc Computer Science",
+            "email": "d.patel@university.ac.uk",
+            "year": "2024/2025"
+        }
+    ]
+}
